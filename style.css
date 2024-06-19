@@ -8,7 +8,7 @@ body {
     justify-content: center;
     min-height: 100vh;
     width: 100%;
-    background: linear-gradient(45deg,#d2001a,#7462ff,#f48e21,#23d5ab);
+    background: linear-gradient(45deg,#d2001a,#9087da,#f48e21,#23d5ab);
     background-size: 300% 300%;
 }
 
@@ -43,6 +43,16 @@ input[type="text"], input[type="number"] {
     width: auto;
     padding: 6px;
     box-sizing: border-box;
+    position: relative;
+    width: 250px;
+}
+
+input input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(240, 159, 8, 0.25);
+    background: #1d2b3a;
+    border-radius: 5px;
 }
 
 button {
