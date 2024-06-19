@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy Cost Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Energy Cost Calculator</h1>
+    <form>
+        <label for="fund">Enter Fund Amount:</label>
+        <input type="number" id="fund" required><br><br>
+
+        <h2>Enter Daily Working Hours of 5 Household Appliances:</h2>
+        <table>
+            <tr>
+                <th>Appliance</th>
+                <th>Daily Working Hours</th>
+                <th>Units/Day</th>
+                <th>kWh</th>
+            </tr>
+            <tr>
+                <td><input type="text" id="appliance1" required></td>
+                <td><input type="number" id="appliance1-hours" required></td>
+                <td><input type="number" id="appliance1-units" readonly></td>
+                <td><input type="number" id="appliance1-kwh" required></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="appliance2" required></td>
+                <td><input type="number" id="appliance2-hours" required></td>
+                <td><input type="number" id="appliance2-units" readonly></td>
+                <td><input type="number" id="appliance2-kwh" required></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="appliance3" required></td>
+                <td><input type="number" id="appliance3-hours" required></td>
+                <td><input type="number" id="appliance3-units" readonly></td>
+                <td><input type="number" id="appliance3-kwh" required></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="appliance4" required></td>
+                <td><input type="number" id="appliance4-hours" required></td>
+                <td><input type="number" id="appliance4-units" readonly></td>
+                <td><input type="number" id="appliance4-kwh" required></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="appliance5" required></td>
+                <td><input type="number" id="appliance5-hours" required></td>
+                <td><input type="number" id="appliance5-units" readonly></td>
+                <td><input type="number" id="appliance5-kwh" required></td>
+            </tr>
+        </table>
+        <button type="button" id="unit-generator">Unit Generator</button>
+        <button type="button" id="submit">Submit</button>
+
+        <h2>Output:</h2>
+        <div class="output-container">
+            <div>
+                <label for="monthly-work-hours">Monthly Work Hours:</label>
+                <input type="text" id="monthly-work-hours" readonly>
+            </div>
+            <div>
+                <label for="monthly-work-units">Monthly Work Units:</label>
+                <input type="text" id="monthly-work-units" readonly>
+            </div>
+            <div>
+                <label for="sum-kwh">Sum of Entered kWh:</label>
+                <input type="text" id="sum-kwh" readonly>
+            </div>
+            <div>
+                <label for="monthly-cost">Monthly Cost:</label>
+                <input type="text" id="monthly-cost" readonly>
+            </div>
+        </div>
+        <div id="alert-box"></div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
